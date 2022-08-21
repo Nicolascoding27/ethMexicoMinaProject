@@ -25,6 +25,7 @@ let server = http.createServer(async (req, res) => {
   let contentType = {
     html: 'text/html',
     js: 'application/javascript',
+    css: 'text/css',
   }[extension];
   let headers = { ...defaultHeaders, 'content-type': contentType };
 

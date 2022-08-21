@@ -1,4 +1,6 @@
 import React from 'react';
+import { Header } from './Header';
+import { Content } from './Content';
 
 /* const defaultTodos = [
   { text: 'Cortar cebolla', completed: true},
@@ -11,7 +13,12 @@ function App() {
     console.log('use effect');
   });
 
-  return <h1>Hola a todos</h1>;
+  return (
+    <React.Fragment>
+      <Header></Header>
+      <Content></Content>
+    </React.Fragment>
+  );
 }
 
 export default App;
