@@ -1,0 +1,86 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+  /* background: radial-gradient(circle at left top, #e29740, #ffffff); */
+}
+
+.headerContainer {
+  height: 100px;
+  display: flex;
+  position: fixed;
+  padding-left: 50px;
+  width: 100%;
+  /* background: linear-gradient(180deg,#1b1e29 29.17%,rgba(27,30,41,0)); */
+  z-index: 100;
+  align-items: center;
+  top: 0;
+}
+
+.titleStyle {
+  color: #5283ec;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 480px;
+  height: 300px;
+  background: rgba(25, 27, 31, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.formTitle {
+  color: #eee;
+  font-size: 20px;
+}
+
+.formWrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.inputStyle {
+  background-color: rgb(33, 36, 41);
+  font-weight: 500;
+  overflow: hidden;
+  padding: 20px 10px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  color: #eee;
+  font-size: 28px;
+}
+
+.ButtonStyle {
+  padding: 15px 20px;
+  outline: none;
+  border: none;
+  background-color: rgba(21, 61, 111, 0.44);
+  width: 100%;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+
+.ButtonStyle:hover {
+  background-color: rgba(21, 61, 111, 0.6);
+}
