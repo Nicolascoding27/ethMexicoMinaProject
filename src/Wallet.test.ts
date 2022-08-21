@@ -1,6 +1,7 @@
 import { Wallet } from './Wallet';
 
 import {
+  // Field,
   isReady,
   Mina,
   Party,
@@ -48,7 +49,7 @@ describe('Wallet', () => {
     setTimeout(shutdown, 0);
   });
 
-  // Add all the shit you want to test here guys! Att JP.
+  // Add all the shit you want to test for this SC here guys! Att JP.
 
   it('Creates and deploys the Wallet smart contract', async () => {
     const zkAppInstance = new Wallet(zkAppAddress);
@@ -62,7 +63,11 @@ describe('Wallet', () => {
     await localDeploy(zkAppInstance, zkAppPrivateKey, deployerAccount);
 
     const txn = await Mina.transaction(deployerAccount, () => {
-      // zkAppInstance.generateStealthAddress();
+      // zkAppInstance.generateStealthAddress(
+      //   new Field(
+      //     '12158399299693830322967808612713398636155367887041628176798871954788371653930'
+      //   )
+      // );
       // zkAppInstance.sign(zkAppPrivateKey);
     });
     await txn.send().wait();
