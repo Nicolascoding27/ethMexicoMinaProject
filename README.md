@@ -17,7 +17,7 @@ npm run serve
 
 ```sh
 npm run test
-npm run testw # watch mode
+npm run test -- --watch # watch mode
 ```
 
 ## How to run coverage
