@@ -8,6 +8,11 @@ This template uses TypeScript.
 npm run build
 ```
 
+## How to run Frontend locally
+```
+npm run serve
+```
+
 ## How to run tests
 
 ```sh
