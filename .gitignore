@@ -11,3 +11,9 @@ coverage
 
 # Never commit keys to Git!
 keys
+.idea
+design.adoc
+
+#project
+public/js
+dist
